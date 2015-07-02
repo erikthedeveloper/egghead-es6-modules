@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "start": "npm run build-watch & npm run server",
+    "build-watch": "webpack -d --watch",
+    "server": "browser-sync start --server --files='dist/bundle.js,index.html' --no-notify"
+  },
+  "devDependencies": {
+    "babel-core": "^5.6.15",
+    "babel-loader": "^5.2.2",
+    "babel-runtime": "^5.6.15",
+    "node-libs-browser": "^0.5.2",
+    "webpack": "^1.10.0"
+  },
+  "dependencies": {
+    "lodash": "^3.10.0"
+  }
+}
